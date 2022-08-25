@@ -1,0 +1,49 @@
+.card {
+    display: flex;
+    height: fit-content;
+    margin: 2rem;
+
+    &-img-top {
+        border: 1px;
+        border-color: black;
+        border-style: solid;
+        border-radius: 2px;
+    }
+}
+
+.info_proyecto {
+    display: flex;
+    height: 23rem;
+    border: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    background-color: rgb(250, 247, 81);
+}
+
+.titulo_proyecto {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 1rem;
+}
+
+.texto_info {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: justify;
+    padding: 2rem;
+}
+
+.imagen_proyecto {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    background-color: aliceblue;
+}

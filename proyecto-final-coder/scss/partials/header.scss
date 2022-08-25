@@ -1,0 +1,90 @@
+header {
+
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.404);
+
+}
+
+.conteiner {
+    &_nav {
+        width: 1280px;
+        margin: auto;
+    }
+}
+
+.nav_checkbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+}
+
+.tab-nav {
+    outline: none;
+    display: none;
+}
+
+.label {
+    display: none;
+    color: white;
+}
+
+.burger {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin-top: 5px;
+}
+
+.content {
+    &_nav {
+        grid-column: 3;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            display: inline-block;
+            padding-right: 10px;
+            a {
+                text-decoration: none;
+                color: white;
+                position: relative;
+                    &:hover::after {
+                        transform: scale(1, 1);
+                    }
+                &::after {
+                    content: "";
+                    display: block;
+                    height: 2px;
+                    background-color: white;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    transform-origin: right;
+                    transform: scale(0, 1);
+                    transition: transform ease-in-out 0.5s;
+                }
+            }
+        }
+    }
+}
+
+.content_section {
+    height: 120vh;
+    background-image: url(/images/fondo-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
