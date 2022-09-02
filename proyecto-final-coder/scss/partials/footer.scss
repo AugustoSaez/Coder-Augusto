@@ -1,4 +1,4 @@
-footer {
+.footer_index {
     background-color: rgba(128, 128, 128, 0.342);
     display: flex;
     border-color: black;
@@ -7,4 +7,8 @@ footer {
     justify-content: right;
     padding-right: 1%;
     text-align: end;
+}
+.footer_ecommerce{
+    @extend.footer_index;
+    background-color: green;
 }

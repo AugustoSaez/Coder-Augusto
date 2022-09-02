@@ -1,3 +1,4 @@
+$cardcoloruno:rgb(250, 247, 81);
 .card {
     display: flex;
     height: fit-content;
@@ -18,7 +19,7 @@
     border-radius: 5px;
     border-style: solid;
     border-color: black;
-    background-color: rgb(250, 247, 81);
+    background-color: $cardcoloruno;
 }
 
 .titulo_proyecto {
@@ -38,12 +39,17 @@
 }
 
 .imagen_proyecto {
-    display: flex;
-    align-items: center;
     width: 100%;
     border: 1px;
     border-radius: 5px;
     border-style: solid;
     border-color: black;
     background-color: aliceblue;
+}
+@mixin flex-center{
+    display: flex;
+    align-items: center;
+}
+.imagen_proyecto{
+    @include flex-center();
 }
