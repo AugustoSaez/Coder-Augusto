@@ -81,7 +81,7 @@ header {
 
 .content_section {
   height: 120vh;
-  background-image: url(/images/fondo-hero.jpg);
+  background-image: url(/images/fondo-hero.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -129,8 +129,6 @@ header {
 }
 
 .imagen_proyecto {
-  display: flex;
-  align-items: center;
   width: 100%;
   border: 1px;
   border-radius: 5px;
@@ -139,7 +137,12 @@ header {
   background-color: aliceblue;
 }
 
-footer {
+.imagen_proyecto {
+  display: flex;
+  align-items: center;
+}
+
+.footer_index, .footer_ecommerce {
   background-color: rgba(128, 128, 128, 0.342);
   display: flex;
   border-color: black;
@@ -148,6 +151,10 @@ footer {
   justify-content: right;
   padding-right: 1%;
   text-align: end;
+}
+
+.footer_ecommerce {
+  background-color: green;
 }
 
 @media screen and (max-width: 1280px) {
