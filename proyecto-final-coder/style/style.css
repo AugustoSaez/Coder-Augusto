@@ -137,9 +137,46 @@ header {
   background-color: aliceblue;
 }
 
+.titulo_ideas {
+  margin: 0%;
+  padding: 0%;
+}
+
 .imagen_proyecto {
   display: flex;
   align-items: center;
+}
+
+.content_section {
+  display: grid;
+  padding: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.titulo_form {
+  margin: 3%;
+  background-color: rgba(250, 235, 215, 0.732);
+  padding: 5px;
+  position: absolute;
+  top: 20%;
+  width: fit-content;
+}
+
+.formulario_ideas {
+  background-color: rgba(0, 0, 0, 0.625);
+  padding: 1rem;
+  border-radius: 5px;
+  border-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form_section {
+  width: 100%;
+  height: max-content;
 }
 
 .footer_index, .footer_ecommerce {

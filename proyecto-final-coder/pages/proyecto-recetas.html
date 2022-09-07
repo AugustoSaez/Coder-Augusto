@@ -4,10 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MiPortafolio!-PagRecetas</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>MiPortafolio!-Pagina de Recetas</title>
+    <meta name="description" content="Un proyecto sobre una pagina de recetas de comida.">
 </head>
 <body>
-    <h1>ESTA EN MANTENIMIENTO :)</h1>
-    <a href="../index.html">Volver al inicio</a>
+    <header>
+        <div class="container_nav">
+            <nav class="nav_checkbox">
+                <a href="../index.html" class="logo">
+                    <h2 class="logo">Mi Portafolio!</h2>
+                </a>
+                <input type="checkbox" id="" class="tab-nav">
+                <label for="tab-nav" class="label">
+                    <div class="burger"></div>
+                    <div class="burger"></div>
+                    <div class="burger"></div>
+                </label>
+                <ul class="content_nav">
+                    <li><a href="/pages/ideas.html">IDEAS</a></li>
+                    <li><a href="/pages/contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="content_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg">
+                        <div class="info_proyecto">
+                            <h3 class="titulo_proyecto">Información del proyecto</h3>
+                            <p class="texto_info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
+                                deleniti dolor voluptatem
+                                repellendus, unde sint, harum aperiam aspernatur expedita fugiat cumque quae fugit,
+                                sapiente
+                                illum ad dicta sequi facilis consequuntur?</p>
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <div class="imagen_proyecto">
+                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../images/paginas-recetas.webp" class="d-block w-100" alt="Inicio de la pagina de recetas.">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../images/pagina-recetas-segunda.webp" class="d-block w-100" alt="Seccion de recetas y tipos de comida.">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer_ecommerce">
+        <p class="footer_parrafo">Muchas gracias por visitar MiPortafolio!.com</p>
+    </footer>
 </body>
 </html>

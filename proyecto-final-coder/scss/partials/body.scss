@@ -1,4 +1,5 @@
 $cardcoloruno:rgb(250, 247, 81);
+
 .card {
     display: flex;
     height: fit-content;
@@ -46,10 +47,42 @@ $cardcoloruno:rgb(250, 247, 81);
     border-color: black;
     background-color: aliceblue;
 }
-@mixin flex-center{
+
+@mixin flex-center {
     display: flex;
     align-items: center;
 }
-.imagen_proyecto{
+.titulo_ideas{
+    margin: 0%;
+    padding: 0%;
+}
+.imagen_proyecto {
     @include flex-center();
+}
+.content_section{
+    display:grid;
+    padding: 15%;
+    @include flex-center();
+    }
+.titulo_form{
+    margin:3%;
+    background-color: rgba(250, 235, 215, 0.732);
+    padding: 5px;
+    position:absolute;
+    top: 20%;
+    width: fit-content;
+}
+.formulario_ideas{
+    background-color: rgba(0, 0, 0, 0.625);
+    padding: 1rem;
+    border-radius: 5px;
+    border-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+.form_section{
+    width: 100%;
+    height: max-content;
 }
