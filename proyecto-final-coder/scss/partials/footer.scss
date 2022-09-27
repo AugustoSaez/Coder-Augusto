@@ -1,14 +1,27 @@
-.footer_index {
-    background-color: rgba(128, 128, 128, 0.342);
+.footer_index{
+    background-color:#edf6f9;
     display: flex;
-    border-color: black;
-    border-style: ridge;
-    align-items: right;
-    justify-content: right;
-    padding-right: 1%;
-    text-align: end;
+    position: absolute;
+    width: 100%;
+    height: 12rem;
+    bottom: 0;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+}
+.logo_footer{
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:500;
 }
 .footer_ecommerce{
-    @extend.footer_index;
-    background-color: green;
+    background-color:#edf6f9;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 21rem;
+    bottom: 5;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
 }

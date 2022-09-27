@@ -3,6 +3,19 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  padding-bottom: 21rem;
+  background-color: #edf6f9;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
 }
 
 header {
@@ -93,13 +106,96 @@ header {
 .card {
   display: flex;
   height: fit-content;
-  margin: 2rem;
+  margin: 1rem;
+  background-color: rgba(0, 0, 0, 0.725);
+  height: 60vh;
+  color: #111111;
 }
 .card-img-top {
   border: 1px;
   border-color: black;
   border-style: solid;
   border-radius: 2px;
+}
+
+.card-body {
+  background-color: rgba(166, 179, 190, 0.7058823529);
+}
+
+.col-md {
+  background-color: rgba(0, 0, 0, 0.433);
+}
+
+.informacion_bienvenida {
+  background-color: rgba(255, 255, 255, 0.3019607843);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  height: 79vh;
+  margin: 3%;
+  border-radius: 1%;
+}
+
+.titulo_texto_inicio {
+  font-size: xx-large;
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.texto_inicio {
+  font-size: large;
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.texto_inicio_dos {
+  font-size: large;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
+}
+
+.titulo_lista_herramientas {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.lista_herramientas {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.imagen_inicio {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 1rem;
+}
+
+.img_html {
+  max-height: 8rem;
+  display: flex;
+  width: fit-content;
+}
+
+.section_info_index {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  margin: 0%;
+  background: #B79891;
+  background: -webkit-linear-gradient(to right, #94716B, #B79891);
+  background: linear-gradient(to right, #94716B, #B79891);
+}
+
+.titulo_section_cards {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  font-size: xx-large;
+  text-decoration: solid;
+  padding: 2rem;
 }
 
 .info_proyecto {
@@ -116,16 +212,18 @@ header {
   text-align: center;
   display: flex;
   align-items: center;
-  background-color: aliceblue;
   padding: 1rem;
 }
 
 .texto_info {
+  background-color: white;
   display: flex;
   width: 100%;
   align-items: center;
   text-align: justify;
   padding: 2rem;
+  height: 22.8rem;
+  border-radius: 1rem;
 }
 
 .imagen_proyecto {
@@ -152,6 +250,8 @@ header {
   padding: 15%;
   display: flex;
   align-items: center;
+  height: 100vh;
+  align-items: center;
 }
 
 .titulo_form {
@@ -169,37 +269,137 @@ header {
   border-radius: 5px;
   border-color: black;
   color: white;
-  display: flex;
-  flex-direction: column;
   width: 100%;
 }
 
 .form_section {
   width: 100%;
   height: max-content;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer_index, .footer_ecommerce {
-  background-color: rgba(128, 128, 128, 0.342);
+.title {
+  font-size: 2.5rem;
+  font-family: "Lobster", cursive;
+}
+
+.wrapper {
+  animation: scroll 70s linear infinite;
+  background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"), #111111;
+  color: #eee;
+  height: 100vh;
+  min-width: 360px;
+  width: 100%;
   display: flex;
-  border-color: black;
-  border-style: ridge;
-  align-items: right;
-  justify-content: right;
-  padding-right: 1%;
-  text-align: end;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+@keyframes scroll {
+  100% {
+    background-position: 0px -3000px;
+  }
+}
+.contact_text {
+  color: #eee;
+  background-color: rgba(17, 17, 17, 0.7254901961);
+  padding: 3rem;
+  text-align: left;
+  justify-content: left;
+  border-radius: 1%;
+}
+
+.carta_presentacion {
+  height: 100%;
+}
+
+.col-md-6 {
+  width: max-content;
+  height: max-content;
+}
+
+.footer_index {
+  background-color: #edf6f9;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 12rem;
+  bottom: 0;
+  text-align: start;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_footer {
+  font-size: xx-large;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 500;
 }
 
 .footer_ecommerce {
-  background-color: green;
+  background-color: #edf6f9;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 21rem;
+  bottom: 5;
+  text-align: start;
+  justify-content: center;
+  align-items: center;
 }
 
+@media screen and (max-width: 1380px) {
+  .texto_info {
+    font-size: small;
+  }
+}
 @media screen and (max-width: 1280px) {
   .container_nav {
     width: 100%;
   }
 }
+@media screen and (max-width: 1200px) {
+  .texto_info {
+    width: max-content;
+  }
+  .container_ecommerce {
+    padding-top: 70vh;
+  }
+}
+@media screen and (max-width: 900px) {
+  .informacion_bienvenida {
+    width: 100%;
+    height: max-content;
+  }
+}
 @media screen and (max-width: 770px) {
+  body {
+    padding-bottom: 0vh;
+  }
+  .content_section {
+    height: max-content;
+  }
+  .informacion_bienvenida {
+    margin-top: 5vh;
+  }
+  .section_info_index {
+    height: 100%;
+    position: relative;
+  }
+  .img_html {
+    height: 10vh;
+  }
+  .wrapper {
+    margin-top: 5vh;
+    height: 100%;
+    padding-bottom: 25vh;
+  }
+  .footer_index {
+    padding-top: 15vh;
+  }
   .label {
     display: grid;
     cursor: pointer;
@@ -220,6 +420,21 @@ header {
   }
   .content_nav li {
     padding: 15px 0px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .texto_info {
+    font-size: smaller;
+  }
+}
+@media screen and (max-width: 450px) {
+  .img_html {
+    height: 8vh;
+  }
+}
+@media (prefers-reduced-motion) {
+  .wrapper {
+    animation: scroll 200s linear infinite;
   }
 }
 

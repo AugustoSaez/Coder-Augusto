@@ -1,16 +1,109 @@
 $cardcoloruno:rgb(250, 247, 81);
 
+.content_section {
+    height: 120vh;
+    background-image: url(/images/fondo-hero.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
 .card {
     display: flex;
     height: fit-content;
-    margin: 2rem;
-
+    margin: 1rem;
+    background-color: rgba(0, 0, 0, 0.725);
+    height: 60vh;
+    color: #111111;
     &-img-top {
         border: 1px;
         border-color: black;
         border-style: solid;
         border-radius: 2px;
     }
+}
+
+.card-body {
+    background-color: #a6b3beb4;
+}
+
+.col-md {
+    background-color: rgba(0, 0, 0, 0.433);
+}
+
+.informacion_bienvenida {
+    background-color: #ffffff4d;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    height: 79vh;
+    margin: 3%;
+    border-radius: 1%;
+}
+
+.titulo_texto_inicio {
+    font-size: xx-large;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.texto_inicio {
+    font-size: large;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.texto_inicio_dos {
+    font-size: large;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+}
+
+.titulo_lista_herramientas {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.lista_herramientas {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.imagen_inicio {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 1rem;
+}
+
+.img_html {
+    max-height: 8rem;
+    display: flex;
+    width: fit-content;
+}
+
+.section_info_index {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+    background: #B79891;
+    background: -webkit-linear-gradient(to right, #94716B, #B79891);
+    background: linear-gradient(to right, #94716B, #B79891);
+}
+
+.titulo_section_cards {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: xx-large;
+    text-decoration: solid;
+    padding: 2rem;
 }
 
 .info_proyecto {
@@ -27,16 +120,18 @@ $cardcoloruno:rgb(250, 247, 81);
     text-align: center;
     display: flex;
     align-items: center;
-    background-color: aliceblue;
     padding: 1rem;
 }
 
 .texto_info {
+    background-color: white;
     display: flex;
     width: 100%;
     align-items: center;
     text-align: justify;
     padding: 2rem;
+    height: 22.8rem;
+    border-radius: 1rem;
 }
 
 .imagen_proyecto {
@@ -52,37 +147,87 @@ $cardcoloruno:rgb(250, 247, 81);
     display: flex;
     align-items: center;
 }
-.titulo_ideas{
+
+.titulo_ideas {
     margin: 0%;
     padding: 0%;
 }
+
 .imagen_proyecto {
     @include flex-center();
 }
-.content_section{
-    display:grid;
+
+.content_section {
+    display: grid;
     padding: 15%;
     @include flex-center();
-    }
-.titulo_form{
-    margin:3%;
+    height:100vh;
+    align-items: center;
+}
+
+.titulo_form {
+    margin: 3%;
     background-color: rgba(250, 235, 215, 0.732);
     padding: 5px;
-    position:absolute;
+    position: absolute;
     top: 20%;
     width: fit-content;
 }
-.formulario_ideas{
+
+.formulario_ideas {
     background-color: rgba(0, 0, 0, 0.625);
     padding: 1rem;
     border-radius: 5px;
     border-color: black;
     color: white;
-    display: flex;
-    flex-direction: column;
-    width:100%;
-}
-.form_section{
     width: 100%;
+}
+
+.form_section {
+    width: 100%;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-family: 'Lobster', cursive;
+}
+// fondo cards
+.wrapper {
+    animation: scroll 70s linear infinite;
+    background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"), #111111;
+    color: #eee;
+    height: 100vh;
+    min-width: 360px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+
+}
+
+@keyframes scroll {
+    100% {
+        background-position: 0px -3000px;
+    }
+}
+// fondo cards
+.contact_text{
+    color: #eee;
+    background-color: #111111b9;
+    padding: 3rem;
+    text-align:left;
+    justify-content: left;
+    border-radius: 1%;
+}
+.carta_presentacion{
+    height: 100%;
+}
+.col-md-6{
+    width: max-content;
     height: max-content;
 }
